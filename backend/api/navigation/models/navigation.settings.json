@@ -1,0 +1,19 @@
+{
+  "info": {
+    "name": "navigation"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  },
+  "connection": "default",
+  "collectionName": "navigations"
+}

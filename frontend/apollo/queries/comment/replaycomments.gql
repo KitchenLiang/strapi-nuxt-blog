@@ -1,0 +1,13 @@
+query replycomments ($sort: String,$limit: Int, $start: Int, $where: JSON){
+  replycomments ( sort:$sort,limit: $limit, start: $start,where:$where){
+    id
+    rc_username
+    content
+    rc_email
+    created_at
+    admin_audit
+    comment_id{
+      id
+    }
+  }
+}

@@ -1,0 +1,9 @@
+query friendlinks ($sort: String,$limit: Int, $start: Int, $where: JSON){
+  friendlinks ( sort:$sort,limit: $limit, start: $start,where:$where){
+    name
+    url
+    logo{
+    url
+    }
+  }
+}

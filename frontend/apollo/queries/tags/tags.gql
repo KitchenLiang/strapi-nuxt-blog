@@ -1,0 +1,7 @@
+query tags ($sort: String,$limit: Int, $start: Int, $where: JSON){
+  tags ( sort:$sort,limit: $limit, start: $start,where:$where){
+    id
+    name
+    index
+  }
+}

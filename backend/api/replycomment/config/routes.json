@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/replycomments",
+      "handler": "replycomment.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/replycomments/count",
+      "handler": "replycomment.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/replycomments/:id",
+      "handler": "replycomment.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/replycomments",
+      "handler": "replycomment.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/replycomments/:id",
+      "handler": "replycomment.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/replycomments/:id",
+      "handler": "replycomment.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

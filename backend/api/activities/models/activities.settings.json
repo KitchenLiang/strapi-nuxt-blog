@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "activities",
+  "info": {
+    "name": "activity"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "banner": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "title": {
+      "type": "string"
+    },
+    "classification": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "description": {
+      "type": "text"
+    },
+    "tags": {
+      "collection": "tag"
+    },
+    "comments": {
+      "collection": "comment",
+      "via": "activity"
+    },
+    "url2": {
+      "type": "string"
+    }
+  }
+}

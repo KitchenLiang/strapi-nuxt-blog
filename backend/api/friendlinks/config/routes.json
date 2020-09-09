@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/friendlinks",
+      "handler": "friendlinks.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/friendlinks/count",
+      "handler": "friendlinks.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/friendlinks/:id",
+      "handler": "friendlinks.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/friendlinks",
+      "handler": "friendlinks.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/friendlinks/:id",
+      "handler": "friendlinks.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/friendlinks/:id",
+      "handler": "friendlinks.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+query comments ($sort: String,$limit: Int, $start: Int, $where: JSON){
+  comments ( sort:$sort,limit: $limit, start: $start,where:$where){
+    id
+    co_username
+    content
+    co_email
+    created_at
+    admin_audit
+    article_id{
+      id
+    }
+  }
+}

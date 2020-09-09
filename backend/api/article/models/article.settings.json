@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "articles",
+  "info": {
+    "name": "article"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "category": {
+      "model": "category",
+      "via": "articles"
+    },
+    "comments": {
+      "via": "article_id",
+      "collection": "comment"
+    },
+    "likes": {
+      "type": "integer"
+    },
+    "visits": {
+      "type": "integer",
+      "default": 1
+    },
+    "summary": {
+      "type": "string"
+    },
+    "published_at": {
+      "type": "datetime"
+    }
+  }
+}

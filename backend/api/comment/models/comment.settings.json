@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "comments",
+  "info": {
+    "name": "comment"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "content": {
+      "type": "richtext"
+    },
+    "article_id": {
+      "model": "article",
+      "via": "comments"
+    },
+    "co_username": {
+      "type": "string"
+    },
+    "co_email": {
+      "type": "email"
+    },
+    "admin_audit": {
+      "type": "boolean"
+    },
+    "replycomments": {
+      "collection": "replycomment",
+      "via": "comment_id"
+    },
+    "activity": {
+      "via": "comments",
+      "model": "activities"
+    }
+  }
+}

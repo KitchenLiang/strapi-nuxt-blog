@@ -1,0 +1,25 @@
+{
+  "connection": "default",
+  "collectionName": "friendlinks",
+  "info": {
+    "name": "friendlinks"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+query activities ($sort: String,$limit: Int, $start: Int, $where: JSON){
+  activities ( sort:$sort,limit: $limit, start: $start,where:$where){
+    id
+    title
+    banner{
+    url
+    }
+    url
+    content
+    classification
+    updated_at
+    tags{
+      name
+    }
+  }
+}

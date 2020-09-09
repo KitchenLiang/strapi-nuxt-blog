@@ -1,0 +1,13 @@
+query Setting($id: ID!) {
+  setting(id: $id) {
+   title
+   description
+   user_email
+   username
+   notice
+   beian
+    logo {
+      url
+    }
+  }
+}

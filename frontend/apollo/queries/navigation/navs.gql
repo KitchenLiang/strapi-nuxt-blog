@@ -1,0 +1,7 @@
+query navigations ($sort: String,$limit: Int, $start: Int, $where: JSON){
+  navigations ( sort:$sort,limit: $limit, start: $start,where:$where){
+    id
+    label
+    url
+  }
+}

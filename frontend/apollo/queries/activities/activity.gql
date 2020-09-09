@@ -1,0 +1,15 @@
+query activity($id: ID!) {
+  activity(id: $id) {
+    id
+    title
+    banner{
+      url
+    }
+    url
+    url2
+    content
+    classification
+    description
+    updated_at
+  }
+}

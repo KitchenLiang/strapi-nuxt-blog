@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "replycomments",
+  "info": {
+    "name": "replycomment"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "content": {
+      "type": "richtext"
+    },
+    "rc_email": {
+      "type": "email"
+    },
+    "rc_username": {
+      "type": "string"
+    },
+    "admin_audit": {
+      "type": "boolean"
+    },
+    "comment_id": {
+      "via": "replycomments",
+      "model": "comment"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+query Categories ($sort: String,$limit: Int, $start: Int, $where: JSON){
+  categories ( sort:$sort,limit: $limit, start: $start,where:$where){
+    id
+    name
+    articles{
+    id
+    }
+  }
+}
