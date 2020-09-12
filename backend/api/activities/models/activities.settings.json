@@ -38,7 +38,7 @@
       "collection": "comment",
       "via": "activity"
     },
-    "url2": {
+    "keywords": {
       "type": "string"
     }
   }

@@ -172,6 +172,10 @@ export default {
         {
           name: "description",
           content: this.blogSetting.description
+        },{
+          hid: "author",
+          name: "author",
+          content: this.blogSetting.username
         }
       ]
     };

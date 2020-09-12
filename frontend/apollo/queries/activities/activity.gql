@@ -6,7 +6,7 @@ query activity($id: ID!) {
       url
     }
     url
-    url2
+    keywords
     content
     classification
     description

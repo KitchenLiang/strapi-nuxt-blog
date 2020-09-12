@@ -34,8 +34,8 @@
     <div class="gt-header-controls">
       <emojiPicker class="gt-ico-text" @onFaceChoose="handleFaceChoose"></emojiPicker>
       <!--        <el-button class="gt-btn gt-btn-preview"><span class="gt-btn-text">预览</span></el-button>-->
-      <el-button class="gt-btn gt-btn-login" @click="submitForm('ruleForm')">
-        <span class="gt-btn-text">提交</span>
+      <el-button type="primary" class="gt-btn gt-btn-login" @click="submitForm('ruleForm')">
+        提交
       </el-button>
       <span class="submit-tip">Ctrl + Enter</span>
     </div>

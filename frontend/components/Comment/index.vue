@@ -258,10 +258,7 @@ export default {
     text-decoration: none;
     white-space: nowrap;
     cursor: pointer;
-    border: 1px solid #6190e8;
     border-radius: 5px;
-    background-color: #6190e8;
-    color: #fff;
     outline: none;
     font-size: 0.75em;
     float: right;

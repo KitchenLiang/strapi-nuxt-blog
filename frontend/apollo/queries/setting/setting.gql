@@ -4,6 +4,7 @@ query Setting($id: ID!) {
    description
    user_email
    username
+   keywords
    notice
    beian
     logo {

@@ -87,7 +87,7 @@ export default {
   },
   head() {
     return {
-      title: `${this.blogSetting.title} - ${this.article.title}`,
+      title: `${this.blogSetting.title}-${this.article.title}`,
       link: [],
       meta: [
         {

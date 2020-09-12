@@ -48,16 +48,14 @@
                 <!---->
                 <div class="not-buy" style="padding-bottom: 30px;">
                   <div class="buy-box">
-                    <a class="button--buy" :href="activity.url" target="_blank">京东自营</a>
+                    <a class="button--buy" :href="activity.url" target="_blank" v-if="activity.url">直达链接</a>
                   </div>
-                  <a class="button--write" :href="activity.url2" target="_blank">天猫旗舰店</a>
                 </div>
               </div>
             </div>
           </div>
           <div class="book-mobile-other">
-            <a class="button--buy" :href="activity.url2" target="_blank">京东自营</a>
-            <a class="button--write" :href="activity.url" target="_blank">天猫旗舰店</a>
+            <a class="button--buy" :href="activity.url" target="_blank" v-if="activity.url">直达链接</a>
           </div>
         </div>
         <div class="book-card">
@@ -106,16 +104,20 @@ export default {
   },
   head() {
     return {
-      title: `活动-${this.blogSetting.title}`,
+      title: `${this.blogSetting.title}-活动`,
       meta: [
         {
           name: "keywords",
-          content: "活动"
+          content: this.activity.keywords
         },
         {
           name: "description",
-          content: this.blogSetting.description
-        }
+          content: this.activity.description
+        },{
+          hid: "author",
+          name: "author",
+          content: this.blogSetting.username
+        },
       ]
     };
   },

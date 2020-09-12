@@ -1,4 +1,5 @@
 {
+  "kind": "collectionType",
   "connection": "default",
   "collectionName": "settings",
   "info": {
@@ -32,6 +33,9 @@
     },
     "beian": {
       "type": "text"
+    },
+    "keywords": {
+      "type": "string"
     }
   }
 }

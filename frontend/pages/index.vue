@@ -50,7 +50,7 @@
           }, {
             hid: 'keywords',
             name: 'keywords',
-            content: this.blogSetting.description
+            content: this.blogSetting.keywords
           }, {
             hid: 'author',
             name: 'author',
