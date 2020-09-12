@@ -48,9 +48,13 @@
             name: 'description',
             content: this.blogSetting.description
           }, {
+            hid: 'keywords',
+            name: 'keywords',
+            content: this.blogSetting.description
+          }, {
             hid: 'author',
             name: 'author',
-            content: this.blogSetting.title
+            content: this.blogSetting.Username
           }, {
             hid: 'applemobileweapptitle',
             name: 'apple-mobile-web-app-title',

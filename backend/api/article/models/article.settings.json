@@ -29,8 +29,8 @@
       "via": "articles"
     },
     "comments": {
-      "via": "article_id",
-      "collection": "comment"
+      "collection": "comment",
+      "via": "article_id"
     },
     "likes": {
       "type": "integer"
@@ -44,6 +44,13 @@
     },
     "published_at": {
       "type": "datetime"
+    },
+    "seourl": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "keywords": {
+      "type": "string"
     }
   }
 }

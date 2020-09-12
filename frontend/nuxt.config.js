@@ -12,6 +12,7 @@ export default {
       { name: 'Cache-Control', content: 'no-siteapp' },//转码申明：用百度打开网页可能会对其进行转码（比如贴广告），避免转码
       { name: 'Cache-Control', content: 'no-transform' },//不得对资源进行转换或转变
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' },
+      { hid: 'keywords', name: 'description', content: process.env.npm_package_description || '' },
       { name: 'renderer', content:'webkit'},//浏览器内核控制
       { name: 'robots', content:'index,follow'},//搜索引擎索引方式
       { name: 'googlebot', content:'index,follow'},//搜索谷歌引擎索引方式

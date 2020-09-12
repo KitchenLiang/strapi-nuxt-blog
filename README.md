@@ -2,7 +2,7 @@
 # 该项目是strapi-starter-nuxt-blog进行二次开发
 https://github.com/strapi/strapi-starter-nuxt-blog
 
-git clone https://gitee.com/kitchenliang/strapi-nuxt-blog.git
+git clone https://github.com/kitchenliang/strapi-nuxt-blog.git
 # 后端项目
 cd backend
 

@@ -62,10 +62,10 @@ export default {
   },
   async fetch({ params, error, store }) {
     await store.dispatch("GetCommentsCountAct", {
-      id: params.id
+      id: params.aid
     });
     await store.dispatch("updateVisits", {
-      id: params.id
+      id: params.aid
     });
   },
   data() {
@@ -93,12 +93,17 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: this.article.title
+          content: this.article.summary
+        },
+         {
+          hid: "keywords",
+          name: "keywords",
+          content: this.article.keywords
         },
         {
           hid: "author",
           name: "author",
-          content: this.article.title
+          content: this.blogSetting.username
         },
         {
           hid: "applemobileweapptitle",
@@ -148,7 +153,7 @@ export default {
       prefetch: true,
       query: articleQuery,
       variables() {
-        return { id: parseInt(this.$route.params.id) };
+        return { id: parseInt(this.$route.params.aid) };
       }
     }
   }

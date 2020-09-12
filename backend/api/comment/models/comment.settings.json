@@ -14,8 +14,8 @@
       "type": "richtext"
     },
     "article_id": {
-      "model": "article",
-      "via": "comments"
+      "via": "comments",
+      "model": "article"
     },
     "co_username": {
       "type": "string"

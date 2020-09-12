@@ -6,6 +6,7 @@ query Articles ($sort: String,$limit: Int, $start: Int, $where: JSON){
     summary
     visits
     likes
+    seourl
     image {
       url
     }

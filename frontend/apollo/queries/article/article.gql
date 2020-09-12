@@ -4,8 +4,10 @@ query article($id: ID!) {
     title
     content
     summary
+    keywords
     visits
     likes
+    seourl
     image {
       url
     }
