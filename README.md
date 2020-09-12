@@ -8,18 +8,23 @@ cd backend
 
 # 使用yarn
 yarn
+
 yarn build
+
 yarn develop
 
 # 使用npm
 npm install
+
 npm run build
+
 npm run develop
 # 前端项目
 cd frontend
 
 # 使用yarn
 yarn
+
 yarn develop
 
 # 使用npm
