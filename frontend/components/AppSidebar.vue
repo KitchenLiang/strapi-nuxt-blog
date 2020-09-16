@@ -46,7 +46,7 @@
     <div class="sidebar-list tag-cloud mt-3" v-if="pagetype==='activity'">
       <div class="header">
         <span>热门标签</span>
-        <nuxt-link :to="{ name: 'activities' }">更多</nuxt-link>
+        <nuxt-link :to="{ name: 'activity' }">更多</nuxt-link>
       </div>
       <ul class="content">
         <template v-for="(item, index) in tags">
@@ -55,7 +55,7 @@
             v-if="index < 20"
             class="list"
            >
-            <nuxt-link :to="{ name: 'activities', query: { tags: item.name} }">{{ item.name }}</nuxt-link>
+            <nuxt-link :to="{ name: 'activity', query: { tags: item.name} }">{{ item.name }}</nuxt-link>
           </li>
         </template>
       </ul>

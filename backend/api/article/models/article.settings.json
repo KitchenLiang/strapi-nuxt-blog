@@ -47,7 +47,8 @@
     },
     "seourl": {
       "type": "uid",
-      "targetField": "title"
+      "required": true,
+      "private": false
     },
     "keywords": {
       "type": "string"

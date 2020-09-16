@@ -230,8 +230,7 @@ export default {
     .other {
       margin-top: 25px;
       position: relative;
-      .not-buy {
-      }
+  
       .buy-box {
         float: left;
       }
@@ -404,8 +403,7 @@ export default {
         .desc {
           max-height: 100px;
         }
-        .author-desc {
-        }
+      
       }
     }
   }

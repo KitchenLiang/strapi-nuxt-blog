@@ -3,9 +3,9 @@
       <article class="article-list p-3" v-for="item in articleList" :key="item.key" >
         <h2 class="title">
           <span class="classify" v-if="item.topPriority===1">热门</span>
-          <nuxt-link :to="{ name: 'archives-aid-id', params: { aid: item.id,id: item.seourl} }" class="vertical-middle" >{{item.title}}</nuxt-link>
+          <nuxt-link :to="{ name: 'article-id-seourl', params: { id: item.id,seourl: item.seourl} }" class="vertical-middle">{{item.title}}</nuxt-link>
         </h2>
-        <nuxt-link :to="{ name: 'archives-id', params: { id: item.id} }" class="thumbnail-wrap mr-3" v-if="item.image">
+        <nuxt-link :to="{ name: 'article-id-seourl', params: {  id: item.id,seourl: item.seourl} }" class="thumbnail-wrap mr-3" v-if="item.image">
           <img :src="api_url+item.image.url" class="thumbnail" alt="">
         </nuxt-link>
         <div class="list-content">

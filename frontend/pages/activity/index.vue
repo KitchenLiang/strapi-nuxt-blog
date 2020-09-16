@@ -12,18 +12,18 @@
       <div class="mr-5" v-if="tags">
         <ul class="list-tag clearfix">
           <li class="list">
-            <nuxt-link :to="{ name: 'activities', query: {} }">全部</nuxt-link>
+            <nuxt-link :to="{ name: 'activity', query: {} }">全部</nuxt-link>
           </li>
           <template v-for="(t, index) in tags">
             <li :key="t.key" v-if="index < 7" class="list">
-              <nuxt-link :to="{ name: 'activities', query: { tags: t.name} }">{{ t.name }}</nuxt-link>
+              <nuxt-link :to="{ name: 'activity', query: { tags: t.name} }">{{ t.name }}</nuxt-link>
             </li>
           </template>
         </ul>
         <ul class="list-tag clearfix" v-if="showmore">
           <template v-for="(t, index) in tags">
             <li :key="t.key" v-if="index > 7" class="list">
-              <nuxt-link :to="{ name: 'activities', query: { tags: t.name} }">{{ t.name }}</nuxt-link>
+              <nuxt-link :to="{ name: 'activity', query: { tags: t.name} }">{{ t.name }}</nuxt-link>
             </li>
           </template>
         </ul>
@@ -31,11 +31,11 @@
     </div>
     <ul class="list-tag clearfix phone-show" v-if="tags">
       <li class="list">
-        <nuxt-link :to="{ name: 'activities', query: {} }">全部</nuxt-link>
+        <nuxt-link :to="{ name: 'activity', query: {} }">全部</nuxt-link>
       </li>
       <template v-for="(t, index) in tags">
         <li :key="t.key" v-if="index < 2" class="list">
-          <nuxt-link :to="{ name: 'activities', query: { tags: t.name} }">{{ t.name }}</nuxt-link>
+          <nuxt-link :to="{ name: 'activity', query: { tags: t.name} }">{{ t.name }}</nuxt-link>
         </li>
       </template>
       <li class="list" @click="drawer = true">
@@ -47,11 +47,11 @@
       <div class="activities-list">
         <div class="activity" v-for="item in activities" :key="item.key">
           <div class="activity-inner">
-            <nuxt-link :to="{ name: 'activities-id', params: { id: item.id} }">
+            <nuxt-link :to="{ name: 'activity-id', params: { id: item.id} }">
               <div class="banner" :style="'background-image:url('+api_url+item.banner.url+')'"></div>
             </nuxt-link>
             <div class="message">
-              <nuxt-link :to="{ name: 'activities-id', params: { id: item.id} }">
+              <nuxt-link :to="{ name: 'activity-id', params: { id: item.id} }">
                 <div class="title">{{item.title}}</div>
               </nuxt-link>
               <div class="date">

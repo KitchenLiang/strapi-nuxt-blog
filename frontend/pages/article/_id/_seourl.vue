@@ -23,16 +23,7 @@
             v-html="$md.render(article.content)"
             v-if="article.content"
           ></div>
-          <!--<div class="tag-list-box">
-            <div class="tag-list-title">点击下面的标签，发现更多相似文章</div>
-            <ul class="tag-list">
-              <li v-for="item in detail.tags" :key="item.key" class="list" :class="`color-${Math.floor(Math.random() * 8) + 1}`">
-                <nuxt-link :to="{ name: 'tags-id', params: { id: 1 }, query: { type: item.term_id, title: item.name } }">{{
-                item.name }}
-                </nuxt-link>
-              </li>
-            </ul>
-          </div>-->
+        
         </article>
 
         <!-- 文章内容结束 -->
@@ -62,10 +53,10 @@ export default {
   },
   async fetch({ params, error, store }) {
     await store.dispatch("GetCommentsCountAct", {
-      id: params.aid
+      id: params.id
     });
     await store.dispatch("updateVisits", {
-      id: params.aid
+      id: params.id
     });
   },
   data() {
@@ -153,7 +144,7 @@ export default {
       prefetch: true,
       query: articleQuery,
       variables() {
-        return { id: parseInt(this.$route.params.aid) };
+        return { id: this.$route.params.id };
       }
     }
   }

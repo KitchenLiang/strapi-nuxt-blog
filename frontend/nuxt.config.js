@@ -75,9 +75,9 @@ export default {
     breaks: true,
     injected: true,
     html:true,
-    anchorLinkSymbol:'',
     use:[
-      "@/plugins/markdown-it-toc-and-anchor"
+      "@/plugins/markdown-it-anchor"
+
     ]
   },
   // Give apollo module options

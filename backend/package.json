@@ -7,6 +7,8 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
+    "pbuild": "cross-env NODE_ENV=production npm run build",
+    "pstart": "cross-env NODE_ENV=production npm start",
     "strapi": "strapi"
   },
   "devDependencies": {},

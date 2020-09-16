@@ -54,7 +54,7 @@
           }, {
             hid: 'author',
             name: 'author',
-            content: this.blogSetting.Username
+            content: this.blogSetting.username
           }, {
             hid: 'applemobileweapptitle',
             name: 'apple-mobile-web-app-title',
