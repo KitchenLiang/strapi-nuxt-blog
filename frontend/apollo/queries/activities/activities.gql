@@ -8,7 +8,7 @@ query activities ($sort: String,$limit: Int, $start: Int, $where: JSON){
     url
     content
     classification
-    updated_at
+    created_at
     tags{
       name
     }

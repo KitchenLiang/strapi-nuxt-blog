@@ -71,7 +71,7 @@
                     p-id="3653"
                   />
                 </svg>
-                {{$moment(item.updated_at).fromNow()}}
+                {{$moment(item.created_at).fromNow()}}
               </div>
               <div class="bottom">
                 <div class="class">

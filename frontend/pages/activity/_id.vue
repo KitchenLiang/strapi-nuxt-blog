@@ -19,7 +19,7 @@
                   <el-avatar :src="gravatar+$md5(blogSetting.user_email)"></el-avatar>
                   <div class="author-info ml-2">{{blogSetting.username}}</div>
                   <div class="author-desc phone-hide">
-                    <span>更新时间：{{$moment(activity.updated_at).format('lll')}}</span>
+                    <span>更新时间：{{$moment(activity.created_at).format('lll')}}</span>
                   </div>
                   <div class="author-desc phone-show">
                     <span>
